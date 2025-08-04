@@ -1,69 +1,44 @@
 import { Project } from "@/types";
 
-
 export const projects: Project[] = [
-    {
-        title: 'E-commerce Platform',
-        description: 'A full-stack e-commerce platform built with Next.js, TypeScript, and Tailwind CSS.',
-        technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Stripe'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/e-commerce-website.png',
-      },
-      {
-        title: 'Task Management App',
-        description: 'A collaborative task management application with real-time updates.',
-        technologies: ['React', 'Node.js', 'MongoDB', 'Socket.io'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/task-manager.webp',
-      },
-      {
-        title: 'Portfolio Website',
-        description: 'My personal portfolio website showcasing my projects and skills.',
-        technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/portfolio-website.jpg',
-      },
-      {
-        title: 'Blog Platform',
-        description: 'A blogging platform with user authentication and markdown support.',
-        technologies: ['Gatsby', 'GraphQL', 'Contentful'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/blog-website.jpeg',
-      },
-      {
-        title: 'Weather App',
-        description: 'A weather application that provides real-time weather updates.',
-        technologies: ['React', 'OpenWeatherMap API'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/weather-app.png',
-      },
-      {
-        title: 'Chat Application',
-        description: 'A real-time chat application using WebSocket technology.',
-        technologies: ['React', 'Node.js', 'Socket.io'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/chat-app.png',
-      },
-      {
-        title: 'Recipe Finder',
-        description: 'A recipe search application using the Edamam API.',
-        technologies: ['React', 'Edamam API'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/recipe-finder.png',
-      },
-      {
-        title: 'Expense Tracker',
-        description: 'A personal finance tracker to manage expenses and income.',
-        technologies: ['React', 'Firebase'],
-        githubLink: 'https://github.com',
-        demoLink: 'https://demo.com',
-        image: '/projects/expense-tracker.webp',
-      }
-  ];
+  {
+    title: 'Tic-Tac-Toe',
+    description: 'A browser-based interactive Tic-Tac-Toe game implemented with responsive design.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    githubLink: 'https://github.com/DaniyahRehman/Tic-Tac-Toe', // replace with actual link
+    demoLink: 'https://ticy-tacy-toeygame.netlify.app/',
+    image: '/projects/tic-tac-toe.png',
+  },
+  {
+    title: 'E-Commerce Website',
+    description: 'Developed a dynamic e-commerce landing page showcasing responsive design and basic shopping features.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    githubLink: 'https://github.com/DaniyahRehman/ecommerce-website', 
+    demoLink: 'https://ecommerce-website-csmx.vercel.app/forms.html', 
+    image: '/projects/e-commerce.png',
+  },
+  {
+    title: 'Serenity Website',
+    description: 'An AI-powered platform for mental wellness with personalized tools, tracking, and community support.',
+    technologies: ['React', 'OpenAI API', 'Tailwind CSS'],
+    githubLink: 'https://github.com/DaniyahRehman/mindfullness',
+    demoLink: 'https://mindfullness-healingcentre.vercel.app/', 
+    image: '/projects/Serenity.png',
+  },
+  {
+    title: 'ATS Resume Tracker',
+    description: 'A Streamlit-based AI tool combining ATS keyword scanning with resume feedback, role suggestions, and LinkedIn comparisons.',
+    technologies: ['Python', 'Streamlit', 'Gemini API'],
+    githubLink: 'https://github.com/DaniyahRehman/ATS_New', // replace with actual link
+    demoLink: 'https://demo.com', // replace with actual demo link
+    image: '/projects/ATS_tracker.png',
+  },
+  {
+    title: 'AI Accessibility Assistant',
+    description: 'An powered voice assistant for visually impaired users offering document reading, object recognition, and navigation.',
+    technologies: ['Python', 'Speech Recognition', 'Computer Vision'],
+    githubLink: 'https://github.com/DaniyahRehman/Smart-Visual-Assisstant.git', // replace with actual link
+    demoLink: 'http://localhost:5501/', // replace with actual demo link
+    image: '/projects/Accessibility assistant.png',
+  }
+];

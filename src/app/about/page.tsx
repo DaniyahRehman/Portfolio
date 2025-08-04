@@ -14,6 +14,7 @@ import {
 export default function About() {
   return (
     <div className="container max-w-7xl mx-auto py-12">
+      {/* Title */}
       <motion.h1 
         className="text-4xl font-bold mb-8 text-center"
         {...fadeInDown}
@@ -27,9 +28,9 @@ export default function About() {
         {...fadeInUp}
       >
         <p className="text-lg text-secondary max-w-3xl mx-auto text-center">
-          I&apos;m a passionate Full Stack Developer with expertise in building modern web applications.
-          With a strong foundation in both frontend and backend technologies, I create seamless
-          user experiences and robust server-side solutions.
+          I&apos;m an aspiring AI and software development enthusiast with hands-on experience in computer vision, 
+          web development, and data visualization. I&apos;ve contributed to research-driven projects involving deep learning
+          for object detection and tracking, and developed user-focused tools like an AI accessibility assistant and resume analyzer. 
         </p>
       </motion.section>
 
@@ -60,9 +61,9 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-2">Frontend</h3>
             <ul className="text-secondary space-y-2">
               <li>React / Next.js</li>
-              <li>TypeScript</li>
               <li>Tailwind CSS</li>
               <li>HTML5 / CSS3</li>
+              <li>JavaScript</li>
             </ul>
           </motion.div>
           
@@ -75,9 +76,7 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-2">Backend</h3>
             <ul className="text-secondary space-y-2">
               <li>Node.js</li>
-              <li>Express</li>
               <li>PostgreSQL</li>
-              <li>MongoDB</li>
             </ul>
           </motion.div>
           
@@ -90,9 +89,7 @@ export default function About() {
             <h3 className="text-xl font-semibold mb-2">Tools & Others</h3>
             <ul className="text-secondary space-y-2">
               <li>Git / GitHub</li>
-              <li>Docker</li>
-              <li>AWS</li>
-              <li>CI/CD</li>
+              <li>VS Code</li>
             </ul>
           </motion.div>
         </motion.div>
@@ -110,6 +107,7 @@ export default function About() {
         >
           Experience
         </motion.h2>
+
         <motion.div 
           className="max-w-3xl mx-auto space-y-8"
           variants={staggerContainer}
@@ -121,26 +119,55 @@ export default function About() {
             variants={fadeInUp}
             {...cardHoverSmall}
           >
-            <h3 className="text-xl font-semibold mb-2">Senior Full Stack Developer</h3>
-            <p className="text-primary mb-2">Company Name • 2020 - Present</p>
+            <h3 className="text-xl font-semibold mb-2">Shooting Stars Fellow</h3>
+            <p className="text-primary mb-2">Shooting Stars Foundation • Aug 2024 – Aug 2025</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
-              <li>Led development of multiple web applications using React and Node.js</li>
-              <li>Implemented CI/CD pipelines reducing deployment time by 50%</li>
-              <li>Mentored junior developers and conducted code reviews</li>
+              <li>Participated and executed multiple leadership programs.</li>
+              <li>Helped organize and implement Scholarship and STEM Programs.</li>
+              <li>Engaged with stakeholders to promote community involvement and outreach.</li>
             </ul>
           </motion.div>
-          
+
           <motion.div 
             className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
             variants={fadeInUp}
             {...cardHoverSmall}
           >
-            <h3 className="text-xl font-semibold mb-2">Full Stack Developer</h3>
-            <p className="text-primary mb-2">Previous Company • 2018 - 2020</p>
+            <h3 className="text-xl font-semibold mb-2">AI Research Intern</h3>
+            <p className="text-primary mb-2">Proglint • Jun 2025 – Jul 2025</p>
             <ul className="text-secondary list-disc list-inside space-y-2">
-              <li>Developed and maintained RESTful APIs</li>
-              <li>Built responsive user interfaces with modern JavaScript frameworks</li>
-              <li>Optimized database queries improving performance by 40%</li>
+              <li>Conducted literature reviews on state-of-the-art computer vision techniques.</li>
+              <li>Assisted in dataset collection, annotation, and preprocessing.</li>
+              <li>Implemented and fine-tuned deep learning models for object detection and tracking.</li>
+              <li>Evaluated model performance and documented technical insights.</li>
+            </ul>
+          </motion.div>
+
+          <motion.div 
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            variants={fadeInUp}
+            {...cardHoverSmall}
+          >
+            <h3 className="text-xl font-semibold mb-2">CoachIn Mentee</h3>
+            <p className="text-primary mb-2">LinkedIn • Mar 2025 – Jul 2025</p>
+            <ul className="text-secondary list-disc list-inside space-y-2">
+              <li>Completed mentorship under the LinkedIn CoachIn program.</li>
+              <li>Focused on improving knowledge in Data Structures, Algorithms, and Networking.</li>
+              <li>Gained career guidance and technical exposure through hands-on sessions.</li>
+            </ul>
+          </motion.div>
+
+          <motion.div 
+            className="bg-white dark:bg-dark/50 p-6 rounded-lg shadow-md"
+            variants={fadeInUp}
+            {...cardHoverSmall}
+          >
+            <h3 className="text-xl font-semibold mb-2">Web Development Intern</h3>
+            <p className="text-primary mb-2">Plasmid • May 2024 – Jul 2024</p>
+            <ul className="text-secondary list-disc list-inside space-y-2">
+              <li>Developed responsive web designs using HTML, CSS, JavaScript, and Bootstrap.</li>
+              <li>Collaborated with mentors to adopt and apply industry best practices.</li>
+              <li>Assisted in optimizing performance and enhancing user experience of web interfaces.</li>
             </ul>
           </motion.div>
         </motion.div>
@@ -168,14 +195,14 @@ export default function About() {
             variants={fadeInUp}
             {...cardHoverSmall}
           >
-            <h3 className="text-xl font-semibold mb-2">Bachelor of Science in Computer Science</h3>
-            <p className="text-primary mb-2">University Name • 2014 - 2018</p>
+            <h3 className="text-xl font-semibold mb-2">B.Tech in Electronics and Communication with Artificial Intelligence</h3>
+            <p className="text-primary mb-2">Indira Gandhi Delhi Technical University for Women • 2023 - 2027</p>
             <p className="text-secondary">
-              Graduated with honors. Focused on software engineering and web development.
+              Pursuing undergraduate studies with a focus on software engineering and web development.
             </p>
           </motion.div>
         </motion.div>
       </motion.section>
     </div>
   )
-} 
+}

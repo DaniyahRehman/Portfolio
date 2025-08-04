@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
-
 export default function Footer() {
   return (
     <footer className="bg-white dark:bg-dark border-t border-gray-200 dark:border-gray-800">
@@ -17,7 +16,7 @@ export default function Footer() {
           
           <div className="flex space-x-6">
             <a
-              href="https://github.com/yourusername"
+              href="https://github.com/DaniyahRehman"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
@@ -25,7 +24,7 @@ export default function Footer() {
               <FaGithub className="h-6 w-6" />
             </a>
             <a
-              href="https://twitter.com/yourusername"
+              href="https://x.com/029Daniyah"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
@@ -33,7 +32,7 @@ export default function Footer() {
               <FaTwitter className="h-6 w-6" />
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/daniyah-rehman/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-secondary hover:text-primary transition-colors"
