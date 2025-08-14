@@ -4,7 +4,14 @@ import { blogs } from '@/contents/blogs'
 import Link from 'next/link'
 import { FaCalendarAlt, FaClock } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animations'
+import { fadeInUp, staggerContainer } from '@/utils/animations'
+import type { MotionProps } from 'framer-motion'
+
+// Fixing the spread issue by typing and destructuring
+const cardHoverSmall: MotionProps = {
+  whileHover: { scale: 1.02 },
+  transition: { type: 'spring', stiffness: 300 }
+}
 
 export default function Blogs() {
   return (
@@ -29,7 +36,8 @@ export default function Blogs() {
             key={index}
             className="bg-white dark:bg-dark/50 rounded-lg shadow-md overflow-hidden"
             variants={fadeInUp}
-            {...cardHoverSmall}
+            whileHover={cardHoverSmall.whileHover}
+            transition={cardHoverSmall.transition}
           >
             <div className="p-6">
               <motion.h2 
@@ -79,4 +87,4 @@ export default function Blogs() {
       </motion.div>
     </div>
   )
-} 
+}

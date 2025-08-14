@@ -4,20 +4,28 @@ import { projects } from '@/contents/projects'
 import Image from 'next/image'
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import { fadeInUp, staggerContainer, cardHoverSmall } from '@/utils/animations'
+import { fadeInUp, staggerContainer } from '@/utils/animations'
+import type { MotionProps } from 'framer-motion'
+
+const cardHoverSmall: MotionProps = {
+  whileHover: { scale: 1.02 },
+  transition: { type: 'spring', stiffness: 300 },
+}
 
 export default function Projects() {
   return (
     <section className="py-20">
       <div className="container max-w-7xl mx-auto px-4">
-        <motion.h2 
+        <motion.h2
           className="text-3xl font-bold mb-12 text-center"
-          {...fadeInUp}
+          variants={fadeInUp}
+          initial="initial"
+          animate="animate"
         >
           Featured Projects
         </motion.h2>
 
-        <motion.div 
+        <motion.div
           className="grid grid-cols-1 md:grid-cols-3 gap-8"
           variants={staggerContainer}
           initial="initial"
@@ -39,26 +47,29 @@ export default function Projects() {
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 />
               </div>
-              <motion.h3 
+
+              <motion.h3
                 className="text-xl font-semibold mb-2"
                 whileHover={{ x: 5 }}
-                transition={{ type: "spring", stiffness: 300 }}
+                transition={{ type: 'spring', stiffness: 300 }}
               >
                 {project.title}
               </motion.h3>
-              <motion.p 
+
+              <motion.p
                 className="text-gray-600 dark:text-gray-300 mb-4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.2 }}
+                variants={fadeInUp}
+                initial="initial"
+                animate="animate"
               >
                 {project.description}
               </motion.p>
-              <motion.div 
+
+              <motion.div
                 className="flex flex-wrap gap-2 mb-4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.3 }}
+                variants={fadeInUp}
+                initial="initial"
+                animate="animate"
               >
                 {project.technologies.map((tech) => (
                   <motion.span
@@ -71,11 +82,12 @@ export default function Projects() {
                   </motion.span>
                 ))}
               </motion.div>
-              <motion.div 
+
+              <motion.div
                 className="flex gap-4"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.4 }}
+                variants={fadeInUp}
+                initial="initial"
+                animate="animate"
               >
                 <motion.a
                   href={project.githubLink}
@@ -106,4 +118,4 @@ export default function Projects() {
       </div>
     </section>
   )
-} 
+}
