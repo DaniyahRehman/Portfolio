@@ -14,15 +14,15 @@ export const projects: Project[] = [
     description: 'Developed a dynamic e-commerce landing page showcasing responsive design and basic shopping features.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     githubLink: 'https://github.com/DaniyahRehman/ecommerce-website', 
-    demoLink: 'https://ecommerce-website-csmx.vercel.app/forms.html', 
+    demoLink: 'https://ecommerce-website-indol-five.vercel.app/', 
     image: '/projects/e-commerce.png',
   },
   {
     title: 'Serenity Website',
     description: 'An AI-powered platform for mental wellness with personalized tools, tracking, and community support.',
     technologies: ['React', 'OpenAI API', 'Tailwind CSS'],
-    githubLink: 'https://github.com/DaniyahRehman/mindfullness',
-    demoLink: 'https://mindfullness-healingcentre.vercel.app/', 
+    githubLink: 'https://github.com/DaniyahRehman/Serenity',
+    demoLink: 'https://serenity-mind-one.vercel.app/', 
     image: '/projects/Serenity.png',
   },
   {
