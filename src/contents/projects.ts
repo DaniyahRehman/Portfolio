@@ -12,7 +12,7 @@ export const projects: Project[] = [
   {
     title: 'E-Commerce Website',
     description: 'Developed a dynamic e-commerce landing page showcasing responsive design and basic shopping features.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript','Firebase'],
     githubLink: 'https://github.com/DaniyahRehman/ecommerce-website', 
     demoLink: 'https://ecommerce-website-indol-five.vercel.app/', 
     image: '/projects/e-commerce.png',
@@ -20,7 +20,7 @@ export const projects: Project[] = [
   {
     title: 'Serenity Website',
     description: 'An AI-powered platform for mental wellness with personalized tools, tracking, and community support.',
-    technologies: ['React', 'OpenAI API', 'Tailwind CSS'],
+    technologies: ['HTML', 'CSS', 'JavaScript','Firebase'],
     githubLink: 'https://github.com/DaniyahRehman/Serenity',
     demoLink: 'https://serenity-mind-one.vercel.app/', 
     image: '/projects/Serenity.png',
