@@ -7,7 +7,7 @@ export const projects: Project[] = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     githubLink: 'https://github.com/DaniyahRehman/Tic-Tac-Toe', // replace with actual link
     demoLink: 'https://ticy-tacy-toeygame.netlify.app/',
-    image: '/projects/tic-tac-toe.png',
+    image: '/projects/Tic-Tac-Toe.png',
   },
   {
     title: 'E-Commerce Website',
